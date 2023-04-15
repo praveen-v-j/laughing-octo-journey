@@ -543,3 +543,12 @@ section {
   color: #2a9d8f;
 }
 
+@media (max-width: 578px) {
+.contain-skill {
+  width: 100%;
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+}
