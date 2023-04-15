@@ -55,6 +55,12 @@ section {
   margin-left: 35px;
 }
 
+@media (min-width: 768px) {
+  .nav-li {
+    margin-left: 13px;
+  }
+}
+
 .ico-nav {
   font-size: 12px;
 }
@@ -84,6 +90,12 @@ section {
   padding-top: 66px;
 }
 
+@media (max-width: 598px) {
+  .contain-home-text {
+    padding-top: 35px;
+  }
+}
+
 .name-col {
   background: linear-gradient(90deg, #28abe1 15%, #ff729f 50%, #f18f01 85%);
   background-clip: text;
@@ -94,6 +106,21 @@ section {
   position: relative;
   width: 50%;
   height: 100%;
+}
+
+/* Mobile Profile */
+
+@media (max-width: 576px) {
+  .imgbox .img-bg {
+    position: relative;
+    height: 100%;
+    width: 300px;
+    top: 10px;
+    left: 25px;
+    transform: rotatey(180deg);
+    animation: animater2 4s linear infinite;
+    z-index: 1;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -109,18 +136,33 @@ section {
   }
 }
 
-.imgbox .img-bg {
-  position: relative;
-  height: 100%;
-  width: calc(100% - 80px);
-  top: -80px;
-  left: 50px;
-  transform: rotatey(180deg);
-  animation: animater 4s linear infinite;
-  z-index: 1;
+@media (min-width: 992px) {
+  .imgbox .img-bg {
+    position: relative;
+    height: 100%;
+    width: calc(100% - 80px);
+    top: -120px;
+    left: 50px;
+    transform: rotatey(180deg);
+    animation: animater 4s linear infinite;
+    z-index: 1;
+  }
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
+  .imgbox .img-bg {
+    position: relative;
+    height: 100%;
+    width: calc(100% - 80px);
+    top: -120px;
+    left: 50px;
+    transform: rotatey(180deg);
+    animation: animater 4s linear infinite;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 1920px) {
   .imgbox .img-bg {
     position: relative;
     height: 100%;
@@ -137,6 +179,19 @@ section {
   50% {
     right: 30px;
     top: -90px;
+  }
+}
+
+/* Mobile Splash */
+
+@media (max-width: 576px) {
+  .img-bg2 {
+    position: absolute;
+    width: 280px;
+    left: 40px;
+    top: 99px;
+    z-index: 0;
+    animation: animates 4s linear infinite;
   }
 }
 
@@ -173,8 +228,17 @@ section {
   }
 }
 
+@media (max-width: 592px) {
+  .text-head {
+    font-size: 28px;
+  }
+}
+
 .contain-abt {
   padding-top: 60px;
+  display: block;
+  justify-content: center;
+  align-items: center;
 }
 
 .abt-me-text {
@@ -193,6 +257,14 @@ section {
   font-weight: 500;
   font-size: 18px;
   text-align: justify;
+}
+
+@media (max-width: 590px) {
+  .para-abt-text {
+    font-weight: 500;
+    font-size: 13px;
+    text-align: justify;
+  }
 }
 
 .para-edu2 {
@@ -221,6 +293,12 @@ section {
   font-size: 35px;
 }
 
+@media (max-width: 590px) {
+  .title-edu-eg {
+    font-size: 28px;
+  }
+}
+
 .edu-list {
   margin-bottom: 8px;
   background: linear-gradient(90deg, #28abe1 15%, #ff729f 50%, #f18f01 85%);
@@ -234,5 +312,45 @@ section {
   justify-content: center;
   align-items: center;
   margin-bottom: 8px;
+}
+
+@media (max-width: 590px) {
+  .btn-res {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 720px) {
+  .btn-res {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-white {
+    background-color: var(--bs-teal);
+  }
+}
+
+@media (max-width: 598px) {
+  .img-abt {
+    display: none;
+  }
+}
+
+.col-abt {
+  margin-top: 50px;
+}
+
+@media (max-width: 576px) {
+  .nav-colb-mob {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-item-mob {
+  }
 }
 
