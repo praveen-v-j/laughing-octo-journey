@@ -248,6 +248,16 @@ section {
   height: 100%;
 }
 
+@media (max-width: 590px) {
+  .contain-abt {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 .abt-me-text {
   font-size: 58px;
   padding-top: 25px;
@@ -383,7 +393,7 @@ section {
 
 .contain-skill {
   width: 100%;
-  height: 150%;
+  height: 150vh;
   display: flex;
   flex-direction: column;
   padding-top: 20px;
@@ -460,10 +470,6 @@ section {
   color: #2a9d8f;
 }
 
-.skill-bar {
-  height: 60%;
-}
-
 .contain-pro {
   width: 100%;
 }
@@ -530,18 +536,14 @@ section {
 
 @media (max-width: 576px) {
   .colm-pro {
-    margin-bottom: 10px;
     align-items: center;
     justify-content: center;
+    padding-top: 15px;
   }
 }
 
 .fa.fa-heart.icon-pro {
   color: red;
-}
-
-.footer-pro {
-  margin-bottom: 15px;
 }
 
 .social-ico-pro {
@@ -555,13 +557,29 @@ section {
 
 @media (max-width: 590px) {
   .card-sec4 {
-    padding-top: 150px;
   }
 }
 
 @media (max-width: 590px) {
   .sec3-skill {
     height: 120vh;
+    padding-bottom: 1400px;
+  }
+}
+
+.clmn-home {
+  margin-left: auto;
+  margin-left: auto;
+}
+
+.text-foo {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 590px) {
+  .footer-pro {
+    position: static;
+    padding-top: 25px;
   }
 }
 
