@@ -18,6 +18,12 @@ section::selection {
   height: 100vh;
 }
 
+@media (max-width: 590px) {
+  .contain {
+    height: 100vh;
+  }
+}
+
 section {
   height: 100vh;
   scroll-snap-align: start;
@@ -419,11 +425,13 @@ section {
   cursor: pointer;
   transition: all 0.4s;
   margin-bottom: 15px;
+  transition: 1.1s;
 }
 
 .contents .box:hover {
   box-shadow: 0px 3px 12px 0px #2a9d8f;
   border: 1px solid white;
+  transform: scale(1.01);
 }
 
 .contents .box::before {
@@ -501,11 +509,13 @@ section {
 .card-pro-box {
   border: 1px solid #454a4d;
   cursor: default;
+  transition: 1s;
 }
 
 .card-pro-box:hover {
   box-shadow: 0px 3px 12px 0px #2a9d8f;
   border: 1px solid white;
+  transform: scale(1.1);
 }
 
 .row-pro {
@@ -543,12 +553,15 @@ section {
   color: #2a9d8f;
 }
 
-@media (max-width: 578px) {
-.contain-skill {
-  width: 100%;
-  height: 200vh;
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px;
+@media (max-width: 590px) {
+  .card-sec4 {
+    padding-top: 150px;
+  }
 }
+
+@media (max-width: 590px) {
+  .sec3-skill {
+    height: 120vh;
+  }
 }
+
